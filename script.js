@@ -14,7 +14,12 @@ function toggleDashboard() {
 
         var contentWrapper = document.querySelector('.content-wrapper');
         contentWrapper.classList.toggle('blur');
-  
+
+        var burgerMenu = document.querySelector('.burger-menu');
+        var isDashboardVisible = dashboardNav.classList.contains('show');
+
+        // Update burger menu text based on the dashboard visibility
+        burgerMenu.innerText = isDashboardVisible ? '☰' : '✕';
 }
 
 
