@@ -105,6 +105,15 @@ body {
 
     .burger-menu {
         display: block;
+        position: fixed;
+        top: 1px;
+        right: 1px;
+        font-size: 3.5em;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #000000;
+        z-index: 1;
     }
 
     .content-wrapper.blur {
