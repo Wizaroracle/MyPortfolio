@@ -6,10 +6,16 @@ function showProjectDetails(title, githubLink) {
     document.getElementById('portfolio').style.display = 'none';
     document.getElementById('project-details').style.display = 'block';
 }
+
 function toggleDashboard() {
+   
+        var dashboardNav = document.querySelector('.dashboard');
+        dashboardNav.classList.toggle('show');
 
-    var dashboardNav = document.querySelector('.dashboard');
-    dashboardNav.classList.toggle('show');
-
+        var contentWrapper = document.querySelector('.content-wrapper');
+        contentWrapper.classList.toggle('blur');
+  
 }
+
+
 // Add more functions or event listeners as needed
